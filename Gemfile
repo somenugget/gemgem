@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.0'
+gem 'rails', '~> 5.2'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
@@ -10,9 +10,8 @@ gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 
-gem 'trailblazer-rails'
-gem 'trailblazer-loader'
-gem 'reform', '~> 2.1.0'
+gem 'trailblazer', '~> 2.1.0.rc1'
+gem 'trailblazer-rails', '~> 2.1.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -23,7 +22,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'minitest-rails-capybara'
+  # gem 'minitest-rails-capybara'
 end
 
 group :development do
