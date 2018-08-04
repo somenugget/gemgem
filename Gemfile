@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2'
 # Use postgresql as the database for Active Record
@@ -9,6 +8,10 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+
+gem 'dry-validation'
+gem 'reform', '~> 2.3.0.rc1'
+gem 'reform-rails', '~> 0.2.0.rc2'
 
 gem 'trailblazer', '~> 2.1.0.rc1'
 gem 'trailblazer-rails', '~> 2.1.5'
