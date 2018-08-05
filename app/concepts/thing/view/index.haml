@@ -1,0 +1,25 @@
+.row
+  .col-sm-12
+    %h1 Things
+    %p
+      = new_thing_link
+
+    %table.table.table-striped
+      %thead
+        %tr
+          %td Id
+          %td Name
+          %td Description
+          %td
+      - model.each do |thing|
+        %tr
+          %td
+            = thing.id
+          %td
+            = thing.name
+          %td
+            = thing.description
+          %td
+            .btn-group
+              = link_to 'Edit', edit_thing_path(thing)
+              = link_to 'Delete', thing_path(thing), method: :delete, class: 'ml-3 text-danger', data: { confirm: 'Are you sure?' }

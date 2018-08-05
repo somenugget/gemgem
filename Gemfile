@@ -6,6 +6,7 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 
 gem 'haml-rails'
+gem 'jquery-rails'
 gem 'sass-rails', '~> 5.0'
 gem 'simple_form'
 
@@ -16,8 +17,8 @@ gem 'reform-rails', '~> 0.2.0.rc2'
 gem 'trailblazer', '~> 2.1.0.rc1'
 gem 'trailblazer-rails', '~> 2.1.5'
 
-gem 'cells-rails'
 gem 'cells-haml'
+gem 'cells-rails'
 gem 'trailblazer-cells'
 
 # Use Capistrano for deployment

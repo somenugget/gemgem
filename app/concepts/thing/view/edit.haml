@@ -1,0 +1,13 @@
+.row
+  .col-sm-12
+    %h1
+      = title
+
+  .col-sm-12
+    = simple_form_for model do |f|
+
+      .form-group
+        = f.input :description, placeholder: 'Describe this thing!'
+      .row
+        .col-sm-12
+          = f.submit 'Edit Thing', class: 'btn btn-primary'
