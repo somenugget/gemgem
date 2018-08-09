@@ -1,0 +1,14 @@
+.row
+  .col-sm-12
+    %h5 Leave your comment
+
+  .col-sm-12
+    = simple_form_for model do |f|
+      = f.input :thing_id, as: :hidden
+      .form-group
+        = f.input :body, as: :text
+      .form-group
+        = f.input :weight
+      .row
+        .col-sm-12
+          = f.submit 'Comment', class: 'btn btn-primary'

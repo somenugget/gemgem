@@ -1,12 +1,15 @@
 .row
   .col-sm-12
     %h1
-      = title
+      = name
 
     %hr
 
     %article
       = description
+
+    %hr
+      = concept('comment/cell/new', model.comments.build, thing: model)
 
     %hr
       = things_link
