@@ -9,5 +9,9 @@ module Thing::Cell
     def things_link
       link_to 'All things', things_path
     end
+
+    def comment_form
+      options[:comment_form]
+    end
   end
 end

@@ -8,7 +8,10 @@ class ThingsController < ApplicationController
   def show
     run Thing::Show
 
-    render cell(Thing::Cell::Show, result[:model])
+    comment_result = Comment::Create::Present.(params: { comment: { thing_id: result[:model].id } })
+    comment_form = Trailblazer::Rails::Form.new comment_result['contract.default'],
+                                                comment_result[:model].class
+    render cell(Thing::Cell::Show, result[:model], comment_form: comment_form)
   end
 
   def new
